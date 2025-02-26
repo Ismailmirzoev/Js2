@@ -1,14 +1,16 @@
-setInterval(func1, 1000);
-
-let d = 0;
+let btn = document.getElementById("btn");
+btn.addEventListener("click", func1);
+let inp1 = document.getElementById("inp1");
+let inp2 = document.getElementById("inp2");
 function func1() {
-  document.getElementById("id1").innerHTML = d++;
+    let parent = document.getElementById("parent");
+    let child = document.getElementById("child");
+    parent.style.display = "flex";
+    child.style.display = "block";
+    localStorage.clear();
+    localStorage.setItem("name", inp1.value);
+    localStorage.setItem("otziv", inp2.value);
 }
-let i = 2;
 function func2() {
-    let ol = document.getElementById("ol");
-    let l1 = document.createElement("li");
-    l1.innerHTML = "list" + i++;
-    document.body.append(l1);
-    ol.body.append(l1);
+    window.location.href = "index2.html";
 }

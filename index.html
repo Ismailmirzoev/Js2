@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./input.css">
     <title>Document</title>
 </head>
 <body>
-    <p id="id1"></p>
-    <ol id="ol">
-        <li>list 1</li>
-        <li>list 2</li>
-    </ol>
-    <button onclick="func2()">Click</button>
-    <script src="./input.js"></script>
+    <div id="parent">
+        <div id="child">
+            <h1>Log In</h1>
+            <label for="">Ваше Имя</label>
+            <input id="inp1" type="text">
+            <label for="">Ваш Отзыв</label>
+            <input id="inp2" type="text">
+            <button onclick="func2()">Log In</button>
+        </div>
+    </div>
+    <button id="btn">Click Me</button>
+    <script src="./script.js"></script>
 </body>
 </html>
